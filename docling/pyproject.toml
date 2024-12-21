@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "docling-doc-parser"
+version = "0.1.0"
+description = ""
+authors = ["Emad Dehnavi <dehnavi@gmx.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+docling = "^2.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "docling_doc_parser.main:parseFromUrl"
